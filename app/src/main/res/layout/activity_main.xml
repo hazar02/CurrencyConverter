@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textCurrencyA"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="1dp"
+        android:textSize="20dp"
+        android:text="">
+    </TextView>
+
+    <RelativeLayout
+    android:id="@+id/layoutA"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@id/textCurrencyA"
+    >
+    <Spinner
+        android:id="@+id/SpinnerCurrency1"
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+    </Spinner>
+    <EditText
+        android:id="@+id/EditTextCurrencyA"
+        android:layout_width="160dip"
+        android:layout_height="50dip"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        >
+    </EditText>
+</RelativeLayout>
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:id="@+id/textCurrencyB"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="1dp"
+
+        android:text="">
+    </TextView>
+
+<RelativeLayout
+android:id="@+id/layoutB"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    >
+<Spinner
+    android:id="@+id/SpinnerCurrency2"
+    android:layout_width="160dip"
+    android:layout_height="50dip"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="16dp"
+
+    android:layout_weight="1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    >
+</Spinner>
+<EditText
+    android:id="@+id/EditTextCurrencyB"
+    android:layout_width="160dip"
+    android:layout_height="50dip"
+    android:inputType="numberDecimal"
+    android:text=""
+    android:textSize="18sp"
+    android:layout_weight="1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    >
+</EditText>
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="Convert" />
+    <LinearLayout
+        android:id="@+id/main_layout01"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextwBaseCurrency"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:text="@string/szBaseCurrency">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dip"
+            android:textColor="#0097A7"
+
+            android:text="">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_layout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewRate"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/szlatestCurrencyRate">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dip"
+
+            android:textColor="#0097A7"
+            android:text="">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_layout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewDate"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/szLastUpdate">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="25dip"
+            android:textColor="#0097A7"
+            android:text="">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
